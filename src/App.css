@@ -1,0 +1,360 @@
+/* Styles généraux */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7f9;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.App-nav {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 15px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.nav-section {
+  margin: 0 20px;
+}
+
+.nav-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.App-nav button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 10px 18px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.App-nav button:hover {
+  background-color: #e0e0e0;
+}
+
+.App-nav button.active {
+  background-color: #61dafb;
+  color: #282c34;
+  border-color: #61dafb;
+}
+
+.App-content {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.App-footer {
+  background-color: #282c34;
+  color: #aaa;
+  padding: 20px;
+  margin-top: auto;
+}
+
+/* Styles communs pour les composants */
+h2 {
+  color: #282c34;
+  border-bottom: 3px solid #61dafb;
+  padding-bottom: 12px;
+  margin-top: 0;
+}
+
+h3 {
+  color: #444;
+  margin-top: 25px;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  color: #282c34;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #21a1c7;
+}
+
+button:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed;
+  color: #666;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.2);
+}
+
+.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+  border-left: 5px solid #d32f2f;
+}
+
+.loading {
+  color: #1976d2;
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.success-message {
+  color: #388e3c;
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+  border-left: 5px solid #388e3c;
+}
+
+.error-message {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 15px 0;
+  border-left: 5px solid #d32f2f;
+}
+
+/* Styles pour les listes */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+/* Styles pour les formulaires */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form div {
+  margin-bottom: 18px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Styles pour la barre de progression */
+.progress-container {
+  margin: 20px 0;
+}
+
+.progress-bar {
+  height: 24px;
+  background-color: #eee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #61dafb;
+  transition: width 0.3s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.progress-text {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Styles spécifiques aux composants */
+.post-details {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 25px;
+  border: 1px solid #e9ecef;
+}
+
+.post-details h3 {
+  margin-top: 0;
+  color: #212529;
+}
+
+.post-details .author {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+.post-details .content {
+  margin: 20px 0;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.post-details .comments {
+  margin-top: 30px;
+}
+
+.post-details .comments h4 {
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 10px;
+  color: #343a40;
+}
+
+.post-details .comments li {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+}
+
+.search-controls,
+.upload-controls {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-controls input {
+  flex: 1;
+}
+
+.timeout-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f1f3f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+.timeout-controls label {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeout-controls input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.controls {
+  background-color: #fff;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.file-info {
+  text-align: left;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  border-left: 4px solid #adb5bd;
+}
+
+.file-info p {
+  margin: 5px 0;
+  font-family: monospace;
+}
+
+.preview {
+  margin: 20px 0;
+}
+
+.post-item h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #ff7875;
+}
+
+.nav-section h3 {
+  margin-top: 0;
+}
